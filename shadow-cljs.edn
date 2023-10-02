@@ -1,0 +1,7 @@
+{:deps   true
+ :builds {:app {:asset-path "/js"
+                :target     :browser
+                :output-dir "resources/public/js"
+                :modules    {:main {:init-fn training-cljs.core/init!}}
+                :devtools   {:http-root "resources/public"
+                             :http-port 3000}}}}
